@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing-Timers</title>
+</head>
+<body>
+    <button id="btn-iniciar">Iniciar</button>
+	<button id="btn-parar">Parar</button>
+    <script>
+   		// setTimeout() - Ejecuta una funcion despues de cierto tiempo.
+		// setInterval() - Ejecuta una funcion cada cierto tiempo.
+
+// ----- setTimeout()
+		function saludo(){
+			alert('Hola Mundo');
+		}
+
+		// var tiempo = setTimeout(saludo, 5000);
+
+		// Paramos la ejecucion.
+		// clearTimeout(tiempo);
+
+		// document.getElementById('btn-iniciar').addEventListener('click', function(){
+		// 	setTimeout(saludo, 1000);
+        // });
+// ----- setInterval()
+    var intervalo = setInterval(saludo, 3000);
+
+      document.getElementById('btn-parar') . addEventListener('click', function(){
+            clearInterval(intervalo);
+      });
+
+    </script>
+</body>
+</html>

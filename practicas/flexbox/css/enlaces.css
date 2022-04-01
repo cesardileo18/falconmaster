@@ -1,0 +1,18 @@
+a{
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background: #f9a03f;
+    color: #fff;
+}
+a:link{
+    text-decoration: none;/* sirve para cambiarle el color a los enlases cuando no fueron visitados*/
+}
+a:visited{    /* sirve para cambiarle el color a los enlases cuando ya fueron visitados*/
+    color: #ccc;
+}
+a:active{
+    text-decoration: underline;
+    color: yellow;
+}

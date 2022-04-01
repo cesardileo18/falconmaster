@@ -1,0 +1,16 @@
+*{
+     /* Selector universal abarca todo el contenido*/
+}
+h1{
+    color: rgb(220, 20, 87);
+}
+.grande{
+    font-size: 40px;
+}
+#rojo{
+    font-size: 50px;
+}
+div article p{
+    font-size: 60px;
+    color: cyan;
+}

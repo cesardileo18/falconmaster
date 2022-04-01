@@ -1,0 +1,19 @@
+*{
+  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.texto{
+    /*text-shadow: 2px 3px 10px #000;*/
+    text-shadow: 2px 0 10px blue;
+    color: #fff; 
+}
+.caja{
+    width: 200px;
+    background: #f79256;
+    height: 200px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  
+}

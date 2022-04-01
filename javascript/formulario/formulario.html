@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="" id="formulario" name="formulario"> 
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+        <input type="radio" name="sexo" id="hombre">
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" name="sexo" id="mujer">
+        <label for="mujer">Mujer</label>
+
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Terminos</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+//        var formulario = document.getElementsByName("formulario")[0];
+          var formulario = document.getElementById("formulario");
+          var nombre = formulario.nombre
+          var sexo = formulario.sexo
+          var terminos = formulario.terminos
+
+          function validar(e){
+              // Validamos Nombre
+                if(nombre.value >18){
+                    alert("Maximo de caracteres permitidos");
+                } else if(nombre.value == ''){
+                    alert("Por favor ingresa un nombre");
+                }
+                // Validamos los radio boton
+                if(sexo[0].checked == false && sexo[1].checked == false ){
+                    alert("Por favor ingresa un sexo");
+                }
+                // Validamos terminos y condiciones 
+                if (!terminos.checked ){
+                    alert("Acepta los terminos y condiciones ");
+                }
+                //evitamos que se envie el formulario 
+                e.preventDefault();
+          }   
+        
+          formulario.addEventListener("submit", validar);
+    </script>
+</body>
+</html>

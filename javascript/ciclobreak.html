@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo Break y Continue</title>
+</head>
+<body>
+    <script>
+        var amigos = ["Acacio", "Cesar", "Orlando", "Alberto",];
+        for(amigo in amigos){
+            if(amigos[amigo] == "Cesar"){
+                continue;
+//            if(amigos[amigo] == "Cesar"){
+//                break;
+            }
+            document.write(amigos[amigo] + "._" + "<br>");
+        }
+        console.log("Fin del Ciclo");
+    </script>
+</body>
+</html>

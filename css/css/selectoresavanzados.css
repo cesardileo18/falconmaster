@@ -1,0 +1,13 @@
+div > p{              /* el signo mayor que sirve para idenficar solamente los parrafos que esten dentro de un div */
+    font-size: 50px;
+}
+input[type]{
+
+}
+input[type="text"]{
+
+}
+article{
+    font-size: 20px;
+    color: maroon;
+}
